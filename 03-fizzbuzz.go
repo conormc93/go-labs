@@ -4,12 +4,19 @@ package main
 
 	func main() {
 	fmt.Println("Welcome to fizzbuzz!")
+
+	//create an array/slice assign it to variable c
 	c := make([]int, 100)
 
+		//loop over the array
 		for i := range c {
 
+			//increment the counter
 			d := i + 1
+
+			//calculate if variable d is divisible by 3
 			threes := d%3 == 0
+			//calculate if variable d is divisible by 5
 			fives := d%5 == 0
 
 			if threes && fives {
